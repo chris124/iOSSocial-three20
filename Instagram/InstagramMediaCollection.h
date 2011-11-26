@@ -9,15 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Three20/Three20.h"
 
-@class LocalInstagramUser;
-
 @interface InstagramMediaCollection : NSObject <TTPhotoSource>
 
 @property(nonatomic, readwrite, retain) NSString *name;
-@property(nonatomic, readonly, retain)  NSString *description;
-@property(nonatomic, readonly, assign)  NSInteger count;
-@property(nonatomic, retain)            LocalInstagramUser *localUser;
+@property(nonatomic, retain)            NSMutableArray *media;
 
-- (id)initWithDictionary:(NSDictionary*)collectionDictionary;
+//- (id)initWithDictionary:(NSDictionary*)collectionDictionary;
 
 @end
