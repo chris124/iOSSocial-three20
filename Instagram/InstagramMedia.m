@@ -22,6 +22,7 @@
 @synthesize index;
 @synthesize caption;
 @synthesize images;
+@synthesize image;
 
 - (id)init
 {

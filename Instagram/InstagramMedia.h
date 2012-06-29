@@ -11,6 +11,8 @@
 
 @interface InstagramMedia : NSObject <TTPhoto>
 
+@property(nonatomic, retain)    UIImage *image;
+
 - (id)initWithDictionary:(NSDictionary*)mediaDictionary;
 
 @end
